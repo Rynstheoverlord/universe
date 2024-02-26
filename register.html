@@ -1,331 +1,67 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIverse - Sign Up</title>
+    <!-- Include Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 m-4 ">
-    <div class="mb-4">
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-        First Name
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
-      <p class="text-red-500 text-xs italic">Please fill out this field.</p>
-    </div>
-    <div class="w-full md:w-1/2 px-3">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-        Last Name
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
-    </div>
-  </div>
-  <div class="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full px-3">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-        Password
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
-      <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-    </div>
-  </div>
-  
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-        University
-      </label>
-      <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>Abia State University, Uturu</option>
-<option>Adamawa State University Mubi</option>
-<option>Adekunle Ajasin University, Akungba</option>
-<option>Akwa Ibom State University, Ikot Akpaden</option>
-<option>Ambrose Alli University, Ekpoma</option>
-<option>Chukwuemeka Odumegwu Ojukwu University, Uli</option>
-<option>Bauchi State University, Gadau</option>
-<option>Benue State University, Makurdi</option>
-<option>Yobe State University, Damaturu</option>
-<option>Cross River State University of Technology, Calabar</option>
-<option>Delta State University Abraka</option>
-<option>Ebonyi State University, Abakaliki</option>
-<option>Ekiti State University</option>
-<option>Enugu State University of Science and Technology, Enugu</option>
-<option>Gombe State Univeristy, Gombe</option>
-<option>Ibrahim Badamasi Babangida University, Lapai</option>
-<option>Ignatius Ajuru University of Education,Rumuolumeni</option>
-<option>Imo State University, Owerri</option>
-<option>Sule Lamido University, Kafin Hausa, Jigawa</option>
-<option>Kaduna State University, Kaduna</option>
-<option>Kano University of Science & Technology, Wudil</option>
-<option>Kebbi State University of Science and Technology, Aliero</option>
-<option>Prince Abubakar Audu University Anyigba</option>
-<option>Kwara State University, Ilorin</option>
-<option>Ladoke Akintola University of Technology, Ogbomoso</option>
-<option>Ondo State University of Science and Technology Okitipupa</option>
-<option>Rivers State University</option>
-<option>Olabisi Onabanjo University, Ago Iwoye</option>
-<option>Lagos State University, Ojo</option>
-<option>Niger Delta University Yenagoa</option>
-<option>Nasarawa State University Keffi</option>
-<option>Plateau State University Bokkos</option>
-<option>Tai Solarin University of Education Ijebu Ode</option>
-<option>Umar Musa Yarâ Adua University Katsina</option>
-<option>Osun State University Osogbo</option>
-<option>Taraba State University, Jalingo</option>
-<option>Sokoto State University</option>
-<option>Yusuf Maitama Sule University Kano</option>
-<option>Oyo State Technical University Ibadan</option>
-<option>Ondo State University of Medical Sciences</option>
-<option>Edo State University Uzairue</option>
-<option>Kingsley Ozumba Mbadiwe University Ogboko, Imo State</option>
-<option>University of Africa Toru Orua, Bayelsa State</option>
-<option>Bornu State University, Maiduguri</option>
-<option>Moshood Abiola University of Science and Technology Abeokuta</option>
-<option>Gombe State University of Science and Technology</option>
-<option>Zamfara State University</option>
-<option>Bayelsa Medical University</option>
-<option>University of Agriculture and Environmental Sciences Umuagwo, Imo State</option>
-<option>Confluence University of Science and Technology Osara, Kogi</option>
-<option>University of Delta, Agbor</option>
-<option>Delta University of Science and Technology, Ozoro</option>
-<option>Dennis Osadebe University, Asaba</option>
-<option>Bamidele Olumilua University of Science and Technology Ikere, Ekiti State</option>
-<option>Lagos State University of Education, Ijanikin</option>
-<option>Lagos State University of Science and Technology Ikorodu</option>
-<option>Shehu Shagari University of Education, Sokoto</option>
-<option>Enugu State University of Medical and Applied Sciences, Igbo-Eno</option>
-<option>University of Ilesa, Osun State</option>
-<option>Emmanuel Alayande University of Education. Oyo, Oyo State</option>
-<option>Saâadatu Rimi University of Education</option>
-<option>Kogi State University, Kabba</option>
-<option>Niger State University of Education, Minna</option>
-<option>Achievers University, Owo</option>
-<option>Adeleke University, Ede</option>
-<option>Afe Babalola University, Ado-Ekiti â Ekiti State</option>
-<option>African University of Science & Technology, Abuja</option>
-<option>Ajayi Crowther University, Ibadan</option>
-<option>Al-Hikmah University, Ilorin</option>
-<option>Al-Qalam University, Katsina</option>
-<option>American University of Nigeria, Yola</option>
-<option>Augustine University</option>
-<option>Babcock University,Ilishan-Remo</option>
-<option>Baze University</option>
-<option>Bells University of Technology, Otta</option>
-<option>Benson Idahosa University, Benin City</option>
-<option>Bingham University, New Karu</option>
-<option>Bowen University, Iwo</option>
-<option>Caleb University, Lagos</option>
-<option>Caritas University, Enugu</option>
-<option>Chrisland University</option>
-<option>Covenant University Ota</option>
-<option>Crawford University Igbesa</option>
-<option>Crescent University</option>
-<option>Edwin Clark University, Kaigbodo</option>
-<option>Elizade University, Ilara-Mokin</option>
-<option>Evangel University, Akaeze</option>
-<option>Fountain Unveristy, Oshogbo</option>
-<option>Godfrey Okoye University, Ugwuomu-Nike â Enugu State</option>
-<option>Gregory University, Uturu</option>
-<option>Hallmark University, Ijebi Itele, Ogun</option>
-<option>Hezekiah University, Umudi</option>
-<option>Igbinedion University Okada</option>
-<option>Joseph Ayo Babalola University, Ikeji-Arakeji</option>
-<option>Kings University, Ode Omu</option>
-<option>Kwararafa University, Wukari</option>
-<option>Landmark University, Omu-Aran.</option>
-<option>Lead City University, Ibadan</option>
-<option>Madonna University, Okija</option>
-<option>Mcpherson University, Seriki Sotayo, Ajebo</option>
-<option>Micheal & Cecilia Ibru University</option>
-<option>Mountain Top University</option>
-<option>Nile University of Nigeria, Abuja</option>
-<option>Novena University, Ogume</option>
-<option>Obong University, Obong Ntak</option>
-<option>Oduduwa University, Ipetumodu â Osun State</option>
-<option>Pan-Atlantic University, Lagos</option>
-<option>Paul University, Awka â Anambra State</option>
-<option>Redeemerâs University, Ede</option>
-<option>Renaissance University, Enugu</option>
-<option>Rhema University, Obeama-Asa â Rivers State</option>
-<option>Ritman University, Ikot Ekpene, Akwa Ibom</option>
-<option>Salem University, Lokoja</option>
-<option>Samuel Adegboyega University, Ogwa.</option>
-<option>Southwestern University, Oku Owa</option>
-<option>Summit University, Offa</option>
-<option>Tansian University, Umunya</option>
-<option>University of Mkar, Mkar</option>
-<option>Veritas University, Abuja</option>
-<option>Wellspring University, Evbuobanosa â Edo State</option>
-<option>Wesley University Ondo</option>
-<option>Western Delta University, Oghara Delta State</option>
-<option>Christopher University Mowe</option>
-<option>Kola Daisi University Ibadan, Oyo State</option>
-<option>Anchor University Ayobo Lagos State</option>
-<option>Dominican University Ibadan Oyo State</option>
-<option>Legacy University, Okija Anambra State</option>
-<option>Arthur Javis University Akpoyubo Cross river State</option>
-<option>Crown Hill University Eiyenkorin Kwara State</option>
-<option>Coal City University Enugu State</option>
-<option>Clifford University Owerrinta Abia State</option>
-<option>Spiritan University, Nneochi Abia State</option>
-<option>Precious Cornerstone University, Oyo</option>
-<option>PAMO University of Medical Sciences, Portharcourt</option>
-<option>Atiba University Oyo</option>
-<option>Eko University of Medical and Health Sciences Ijanikin Lagos</option>
-<option>Skyline University, Kano</option>
-<option>Greenfield University, Kaduna</option>
-<option>Dominion University Ibadan Oyo State</option>
-<option>Trinity University Ogun State</option>
-<option>Westland University Iwo Osun State</option>
-<option>Topfaith University, Mkpatak Akwa Ibom State</option>
-<option>Thomas Adewumi University, Oko-Irese Kwara State</option>
-<option>Maranathan University, Mgbidi Imo State</option>
-<option>Ave Maria University, Piyanko Nasarawa State</option>
-<option>Al-Istiqama University, Sumaila Kano State</option>
-<option>Mudiame University, Irrua Edo State</option>
-<option>Havilla University, Nde-Ikom Cross River State</option>
-<option>Claretian University of Nigeria, Nekede Imo State</option>
-<option>NOK University, Kachia Kaduna State</option>
-<option>Karl-Kumm University, Vom Plateau State</option>
-<option>James Hope University, Lagos Lagos State</option>
-<option>Maryam Abacha American University of Nigeria Kano State</option>
-<option>Capital City University, Kano State</option>
-<option>Ahman Pategi University, Kwara State</option>
-<option>University of Offa, Kwara State</option>
-<option>Mewar International University, Masaka Nasarawa State</option>
-<option>Edusoko University, Bida Niger State</option>
-<option>Philomath University, Kuje Abuja</option>
-<option>Khadija University, Majia Jigawa State</option>
-<option>Anan University, Kwall Plateau State</option>
-<option>PEN Resource University, Gombe</option>
-<option>Al-Ansar University, Maiduguri Borno</option>
-<option>Margaret Lawrence University, Umunede Delta State</option>
-<option>Khalifa Isiyaku Rabiu University, Kano</option>
-<option>Sports University, Idumuje Ugboko Delta State</option>
-<option>Baba Ahmed University, Kano State</option>
-<option>Saisa University of Medical Sciences and Technology, Sokoto State</option>
-<option>Nigerian British University, Asa Abia State</option>
-<option>Peter University, Achina-Onneh Anambra State</option>
-<option>Newgate University, MInna Niger State.</option>
-<option>European University of Nigeria, Duboyi FCT</option>
-<option>NorthWest University Sokoto State</option>
-<option>Rayhaan University, Kebbi</option>
-<option>Muhammad Kamalud University Kwara</option>
-<option>Sam Maris University, Ondo</option>
-<option>Aletheia University, Ago-Iwoye Ogun State</option>
-<option>Lux Mundi University Umuahia, Abia State</option>
-<option>Maduka University, Ekwegbe, Enugu State</option>
-<option>PeaceLand University, Enugu State</option>
-<option>Amadeus University, Amizi, Abia State</option>
-<option>Vision University, Ikogbo, Ogun State</option>
-<option>Azman University, Kano State</option>
-<option>Huda University, Gusau, Zamafara State</option>
-<option>Franco British International University, Kaduna State</option>
-<option>Canadian University of Nigeria, Abuja</option>
-<option>Gerar University of Medical Science Imope Ijebu, Ogun State.</option>
-<option>British Canadian University, Obufu Cross River State</option>
-<option>Hensard University, Toru-Orua, Sagbama, Bayelsa State</option>
-<option>Amaj University, Kwali, Abuja</option>
-<option>Phoenix University, Agwada, Nasarawa State</option>
-<option>Wigwe University, Isiokpo Rivers State</option>
-<option>Hillside University of Science and Technology, Okemisi, Ekiti State</option>
-<option>University on the Niger, Umunya, Anambra state</option>
-<option>Elrazi Medical University Yargaya University, Kano State</option>
-<option>Venite University, Iloro-Ekiti, Ekiti State</option>
-<option>Shanahan University Onitsha, Anambra State</option>
-<option>The Duke Medical University, Calabar, Cross River State</option>
-<option>Mercy Medical University, Iwo, Ogun State</option>
-<option>Cosmopolitan University Abuja</option>
-<option>Miva Open University, Abuja FCT</option>
-<option>Iconic Open University, Sokoto State.</option>
-<option>West Midlands Open University, Ibadan, Oyo State</option>
-<option>Al-Muhibbah Open University, Abuja</option>
-<option>El-Amin University, Minna, Niger State</option>
-<option>College of Petroleum and Energy Studies, Kaduna State</option>
-<option>Jewel University, Gombe state</option>
-<option>Prime University, Kuje, FCT Abuja</option>
-<option>Nigerian University of Technology and Management, Apapa, Lagos State</option>
-<option>Al-Bayan University, Ankpa, Kogi State</option>
- <option>Abubakar Tafawa Balewa University, Bauchi</option>
-<option>Ahmadu Bello University, Zaria</option>
-<option>Bayero University, Kano</option>
-<option>Federal University Gashua, Yobe</option>
-<option>Federal University of Petroleum Resources, Effurun</option>
-<option>Federal University of Technology, Akure</option>
-<option>Federal University of Technology, Minna</option>
-<option>Federal University of Technology, Owerri</option>
-<option>Federal University, Dutse, Jigawa State</option>
-<option>Federal University, Dutsin-Ma, Katsina</option>
-<option>Federal University, Kashere, Gombe State</option>
-<option>Federal University, Lafia, Nasarawa State</option>
-<option>Federal University, Lokoja, Kogi State</option>
-<option>Alex Ekwueme University, Ndufu-Alike, Ebonyi State</option>
-<option>Federal University, Otuoke, Bayelsa</option>
-<option>Federal University, Oye-Ekiti, Ekiti State</option>
-<option>Federal University, Wukari, Taraba State</option>
-<option>Federal University, Birnin Kebbi</option>
-<option>Federal University, Gusau Zamfara</option>
-<option>Michael Okpara University of Agricultural Umudike</option>
-<option>Modibbo Adama University of Technology, Yola</option>
-<option>National Open University of Nigeria, Lagos</option>
-<option>Nigeria Police Academy Wudil</option>
-<option>Nigerian Defence Academy Kaduna</option>
-<option>Nnamdi Azikiwe University, Awka</option>
-<option>Obafemi Awolowo University,Ile-Ife</option>
-<option>University of Abuja, Gwagwalada</option>
-<option>Federal University of Agriculture, Abeokuta</option>
-<option>University of Agriculture, Makurdi</option>
-<option>University of Benin</option>
-<option>University of Calabar</option>
-<option>University of Ibadan</option>
-<option>University of Ilorin</option>
-<option>University of Jos</option>
-<option>University of Lagos</option>
-<option>University of Maiduguri</option>
-<option>University of Nigeria, Nsukka</option>
-<option>University of Port-Harcourt</option>
-<option>University of Uyo</option>
-<option>Usumanu Danfodiyo University</option>
-<option>Nigerian Maritime University Okerenkoko, Delta State</option>
-<option>Air Force Institute of Technology, Kaduna</option>
-<option>Nigerian Army University Biu</option>
-<option>Federal University of Health Technology, Otukpo Benue State</option>
-<option>Federal University of Agriculture, Zuru, Kebbi State</option>
-<option>Federal University of Technology, Babura, Jigawa State</option>
-<option>Federal University of Technology, Ikot Abasi, Akwa Ibom State</option>
-<option>Federal University of Health Sciences, Azare, Bauchi State</option>
-<option>Federal University of Health Sciences, Ila Orangun, Osun State</option>
-<option>David Nweze Umahi Federal University of Medical Sciences, Uburu</option>
-<option>Admiralty University Ibusa, Delta State</option>
-<option>Federal University of Transportation Daura, Katsina</option>
-                                  
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-purple-500 p-6">
+        <div class="container mx-auto">
+            <a href="#" class="text-white font-semibold text-xl">UNIverse</a>
         </div>
-      </div>
-    </div>
-    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-        Matt no / registration no (optional)
-      </label>
-      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="number" placeholder="90210">
-    </div>
-  </div>
+    </header>
 
-    <div class="flex items-center justify-between">
-      <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-        Sign up
-      </button>
-      <a class="inline-block align-baseline font-bold text-sm text-purple-500 hover:text-purple-800" href="#">
-        Already a member?
-      </a>
+    <!-- Sign Up Form -->
+    <div class="container mx-auto mt-8">
+        <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="py-4 px-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Sign Up</h2>
+                <!-- Form -->
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                        <input type="text" id="name" name="name" class="form-input mt-1 block w-full">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                        <input type="email" id="email" name="email" class="form-input mt-1 block w-full">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700 font-semibold">Password</label>
+                        <input type="password" id="password" name="password" class="form-input mt-1 block w-full">
+                    </div>
+                    <div class="mb-6">
+                        <label for="password_confirmation" class="block text-gray-700 font-semibold">Confirm
+                            Password</label>
+                        <input type="password" id="password_confirmation" name="password_confirmation"
+                            class="form-input mt-1 block w-full">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="submit"
+                            class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                            Sign Up
+                        </button>
+                        <a href="#" class="text-gray-600">Already have an account? Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-</form
 
-  
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 UNIverse. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
