@@ -18,97 +18,33 @@
         </div>
     </header>
 
-    <!-- Sign Up Form -->
-    <div class="container mx-auto mt-8">
-        <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
-            <div class="py-8 px-6">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Sign Up</h2>
-                <!-- Form -->
-                <form>
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-semibold">Name</label>
-                        <input type="text" id="name" name="name" class="form-input mt-1 block w-full rounded-md shadow-sm focus:outline-none" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 font-semibold">Email</label>
-                        <input type="email" id="email" name="email" class="form-input mt-1 block w-full rounded-md shadow-sm focus:outline-none" 
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    
 
-                        <div class="mb-4">
-                        <label for="regno" class="block text-gray-700 font-semibold">Registration / Matt no (optional)</label>
-                        <input type="text" id="regno" name="regno" class="form-input mt-1 block w-full rounded-md shadow-sm focus:outline-none">
-                        </div>
-
-       <label for="state_select" class="block text-gray-700 font-semibold">State of schooling</label>
-                                       
-  <label for="state_select" class="sr-only">State</label>
-  <select id="state_select" class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
-      
-      
-  <option value="Abia">Abia</option>
-  <option value="Adamawa">Adamawa</option>
-  <option value="Akwa Ibom">Akwa Ibom</option>
-  <option value="Anambra">Anambra</option>
-  <option value="Bauchi">Bauchi</option>
-  <option value="Bayelsa">Bayelsa</option>
-  <option value="Benue">Benue</option>
-  <option value="Borno">Borno</option>
-  <option value="Cross River">Cross River</option>
-  <option value="Delta">Delta</option>
-  <option value="Ebonyi">Ebonyi</option>
-  <option value="Edo">Edo</option>
-  <option value="Ekiti">Ekiti</option>
-  <option value="Enugu">Enugu</option>
-  <option value="Gombe">Gombe</option>
-  <option value="Imo">Imo</option>
-  <option value="Jigawa">Jigawa</option>
-  <option value="Kaduna">Kaduna</option>
-  <option value="Kano">Kano</option>
-  <option value="Katsina">Katsina</option>
-  <option value="Kebbi">Kebbi</option>
-  <option value="Kogi">Kogi</option>
-  <option value="Kwara">Kwara</option>
-  <option value="Lagos">Lagos</option>
-  <option value="Nasarawa">Nasarawa</option>
-  <option value="Niger">Niger</option>
-  <option value="Ogun">Ogun</option>
-  <option value="Ondo">Ondo</option>
-  <option value="Osun">Osun</option>
-  <option value="Oyo">Oyo</option>
-  <option value="Plateau">Plateau</option>
-  <option value="Rivers">Rivers</option>
-  <option value="Sokoto">Sokoto</option>
-  <option value="Taraba">Taraba</option>
-  <option value="Yobe">Yobe</option>
-  <option value="Zamfara">Zamfara</option>
-      
-  </select>
-
-                    
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="block text-gray-700 font-semibold">Password</label>
-                        <input type="password" id="password" name="password" class="form-input mt-1 block w-full rounded-md shadow-sm focus:outline-none" minlength="6" required>
-                    </div>
-                    <div class="mb-6">
-                        <label for="password_confirmation" class="block text-gray-700 font-semibold">Confirm
-                            Password</label>
-                        <input type="password" id="password_confirmation" name="password_confirmation"
-                            class="form-input mt-1 block w-full rounded-md shadow-sm focus:outline-none" required>
-
-                    </div>
-                    <div class="flex items-center justify-between">
-      <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-        Sign up
-      </button>
-      <a class="inline-block align-baseline font-bold text-sm text-purple-500 hover:text-purple-800" href="#">
-        Already a member?
-      </a>
-                    </div>
-                </form>
-            </div>
-        </div>
+<form class="max-w-md mx-auto">
+    <div class="grid md:grid-cols-2 md:gap-6">
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
     </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+    </div>
+  <div class="relative z-0 w-full mb-5 group">
+      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+  </div>
+  <div class="relative z-0 w-full mb-5 group">
+      <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+  </div>
+  
+  
+  </div>
+  
+  </div>
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+</form>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-6 mt-auto">
